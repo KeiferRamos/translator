@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d3782f2cbe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Translator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-to-translate">
+        <select id="from-lang" class="translated-from-lang"></select>
+        <textarea id="textTotranslate"></textarea>
+        <div class="btn-container">
+          <button class="speaker" id="speak-from">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+          <button id="switch"><i class="fa-solid fa-right-left"></i></button>
+        </div>
+      </div>
+      <div class="translated-text">
+        <select id="to-lang" class="lang-to-translate"></select>
+        <textarea id="translatedText" readonly></textarea>
+        <div class="btn-container">
+          <button class="speaker" id="speak-to">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+          <button id="translate">translate</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</html>
